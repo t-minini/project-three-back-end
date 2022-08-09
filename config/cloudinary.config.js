@@ -11,7 +11,7 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary,
   params: {
-    folder: "img-folder",
+    folder: "where-to-go-imgs",
     format: async (req, file) => "png",
     use_filename: true,
   },

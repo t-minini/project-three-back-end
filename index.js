@@ -17,7 +17,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-// app.use(cors({ origin: process.env.REACT_APP_URL }));
+app.use(cors({ origin: process.env.REACT_APP_URL }));
 
 const uploadImgRouter = require("./routes/uploadimg.routes");
 app.use("/", uploadImgRouter);
